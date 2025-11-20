@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N, x, maxx, minn, cem = 0;
+    cin >> N;
+    cin >> x; maxx = minn = x; cem = x;
+    for (int i = 1; i < N; i++) {
+        cin >> x;
+        if (x > maxx) maxx = x;
+        if (x < minn) minn = x;
+        cem += x;
+    }
+    cout << maxx << " " << minn << " " << cem / (double)N;
+    return 0;
+}

@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, t, ters = 0;
+    cin >> n; t = n;
+    while (t > 0) { ters = ters * 10 + t % 10; t /= 10; }
+    cout << (n == ters ? "Beraberdir" : "Farklidir");
+    return 0;
+}

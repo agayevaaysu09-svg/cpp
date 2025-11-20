@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N, x, cemTek = 0, cemCut = 0;
+    cin >> N;
+    for (int i = 0; i < N; i++) {
+        cin >> x;
+        if (i % 2 == 0) cemCut += x; else cemTek += x;
+    }
+    cout << cemTek << " " << cemCut;
+    return 0;
+}

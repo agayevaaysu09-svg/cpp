@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double maas, vergi, net;
+    cin >> maas;
+    if (maas > 2000) vergi = maas * 0.20;
+    else vergi = maas * 0.10;
+    net = maas - vergi;
+    cout << "Xalis maas: " << net;
+    return 0;
+}
