@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, ters = 0;
+    cout << "Eded: ";
+    cin >> n;
+    while (n > 0) { ters = ters * 10 + n % 10; n /= 10; }
+    cout << "Tersi: " << ters;
+    return 0;
+}

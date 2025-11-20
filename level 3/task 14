@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, ters = 0, temp;
+    cout << "Eded: ";
+    cin >> n;
+    temp = n;
+    while (temp > 0) { ters = ters * 10 + temp % 10; temp /= 10; }
+    cout << (n == ters ? "Palindrome" : "Palindrome deyil");
+    return 0;
+}

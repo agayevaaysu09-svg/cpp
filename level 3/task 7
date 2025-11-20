@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a;
+    int cem = 0;
+
+    while (cin >> a && a != 0) {
+        cem = cem + a;
+    }
+
+    cout << cem;
+    return 0;
+}

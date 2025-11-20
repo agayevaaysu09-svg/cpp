@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int  cem = 0;
+	for (int a = 1; a <= 100;a++){
+		cem = cem + a;
+			
+		
+
+	}
+	cout << cem;
+
+
+}

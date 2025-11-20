@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int a;
+	cin >> a;
+	int son = 0;
+	int cem = 0;
+	while (a != 0) {
+		son = a % 10;
+		cem = cem + son;
+		a = a / 10;
+	}
+	cout << cem;
+}

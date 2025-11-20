@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Eded: ";
+    cin >> n;
+    bool sade = true;
+    if (n < 2) sade = false;
+    for (int i = 2; i * i <= n; i++)
+        if (n % i == 0) sade = false;
+    cout << (sade ? "Sade" : "Sade deyil");
+    return 0;
+}
