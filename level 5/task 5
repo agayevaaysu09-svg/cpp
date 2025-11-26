@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+
+void yoxla(int a) {
+    if (a > 0)
+        cout << "eded musbetdir";
+    else if (a < 0)
+        cout << "eded menfidir";
+    else
+        cout << "sifirdir";
+}
+
+int main() {
+    int a;
+    cout << "eded daxil et: ";
+    cin >> a;
+
+    yoxla(a); 
+
+    return 0;
+}

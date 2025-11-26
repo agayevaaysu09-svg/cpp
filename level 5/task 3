@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+
+int kvadratHesabla(int a) {
+    return a * a;
+}
+
+
+int kubHesabla(int a) {
+    return a * a * a;
+}
+
+int main() {
+    int a;
+    cout << "Eded daxil edin: ";
+    cin >> a;
+
+    int kvadrat = kvadratHesabla(a);
+    int kub = kubHesabla(a);
+
+    cout << "Kvadrat: " << kvadrat << "  Kub: " << kub;
+
+    return 0;
+}

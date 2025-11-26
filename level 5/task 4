@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+
+void tekCutYoxla(int a) {
+    if (a % 2 == 0)
+        cout << "eded cutdur";
+    else
+        cout << "eded tekdir";
+}
+
+int main() {
+    int a;
+    cin >> a;
+
+    tekCutYoxla(a);  
+
+    return 0;
+}

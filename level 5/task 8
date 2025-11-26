@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+
+int cemTopla(int n) {
+    int cem = 0;
+    for (int a = 1; a <= n; a++) {
+        cem = cem + a;
+    }
+    return cem;
+}
+
+int main() {
+    
+    cout << cemTopla(100);
+
+    return 0;
+}

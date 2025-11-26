@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+
+void cutEdedler(int n) {
+    for (int a = 1; a <= n; a++) {
+        if (a % 2 == 0) {
+            cout << a << endl;
+        }
+    }
+}
+
+int main() {
+    cutEdedler(100); 
+    return 0;
+}
