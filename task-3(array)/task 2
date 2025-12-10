@@ -1,0 +1,9 @@
+int smallestPositive(int a[], int n) {
+    int minPos = INT_MAX;
+
+    for (int i = 0; i < n; i++)
+        if (a[i] > 0 && a[i] < minPos)
+            minPos = a[i];
+
+    return minPos;
+}

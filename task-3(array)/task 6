@@ -1,0 +1,9 @@
+int sumBetweenBC(int a[], int n, int b, int c) {
+    int sum = 0;
+
+    for (int i = 0; i < n; i++)
+        if (a[i] > b && a[i] < c)
+            sum += a[i];
+
+    return sum;
+}
