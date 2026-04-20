@@ -1,0 +1,34 @@
+using System;
+
+public class Product
+{
+    public string Name { get; set; }
+    public string Category { get; set; }
+    public double Price { get; set; }
+    public DateTime ExpiryDate { get; set; }
+
+    // Constructor
+    public Product(string name, string category, double price, DateTime expiryDate)
+    {
+        Name = name;
+        Category = category;
+        Price = price;
+        ExpiryDate = expiryDate;
+    }
+
+    // getData()
+    public void GetData()
+    {
+        Console.WriteLine($"Ad: {Name}");
+        Console.WriteLine($"Kateqoriya: {Category}");
+        Console.WriteLine($"Qiymət: {Price}");
+        Console.WriteLine($"Son istifadə tarixi: {ExpiryDate.ToShortDateString()}");
+        Console.WriteLine("----------------------");
+    }
+
+    // Son istifadə tarixini yoxlayan metod
+    public bool IsExpired()
+    {
+        return ExpiryDate < DateTime.Now;
+    }
+}
